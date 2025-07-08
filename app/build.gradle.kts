@@ -8,10 +8,12 @@ plugins {
 demeter {
     tracer {
         includedClasses =
-            listOf("com.example.demeterinmultimoduleapp") // list of packages that should be analyzed
+            listOf("com.example") // list of packages that should be analyzed
     }
 
-    compose() // turn on compose inspections
+    compose {
+        apply(project(":app:mylibrary"))
+    }
 }
 
 android {

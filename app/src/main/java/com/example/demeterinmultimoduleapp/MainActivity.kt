@@ -42,7 +42,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             DemeterInMultiModuleAppTheme {
                 DemeterDoesNotWork()  // Demeter doesnt work
-                DemeterIsWork() // Demeter is work
+//                DemeterIsWork() // Demeter is work
             }
         }
     }
